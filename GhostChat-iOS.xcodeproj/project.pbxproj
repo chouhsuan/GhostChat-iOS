@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C7849121AED4DD50054DBED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7849111AED4DD50054DBED /* AppDelegate.swift */; };
 		6C7849141AED4DD50054DBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7849131AED4DD50054DBED /* ViewController.swift */; };
+		6C7849171AED4DD50054DBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7849151AED4DD50054DBED /* Main.storyboard */; };
 		6C7849191AED4DD50054DBED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7849181AED4DD50054DBED /* Images.xcassets */; };
 		6C78491C1AED4DD50054DBED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C78491A1AED4DD50054DBED /* LaunchScreen.xib */; };
 		6C7849281AED4DD50054DBED /* GhostChat_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7849271AED4DD50054DBED /* GhostChat_iOSTests.swift */; };
@@ -29,6 +30,7 @@
 		6C7849101AED4DD50054DBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C7849111AED4DD50054DBED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7849131AED4DD50054DBED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C7849161AED4DD50054DBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C7849181AED4DD50054DBED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C78491B1AED4DD50054DBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6C7849211AED4DD50054DBED /* GhostChat-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GhostChat-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			children = (
 				6C7849111AED4DD50054DBED /* AppDelegate.swift */,
 				6C7849131AED4DD50054DBED /* ViewController.swift */,
+				6C7849151AED4DD50054DBED /* Main.storyboard */,
 				6C7849181AED4DD50054DBED /* Images.xcassets */,
 				6C78491A1AED4DD50054DBED /* LaunchScreen.xib */,
 				6C78490F1AED4DD50054DBED /* Supporting Files */,
@@ -189,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7849171AED4DD50054DBED /* Main.storyboard in Resources */,
 				6C78491C1AED4DD50054DBED /* LaunchScreen.xib in Resources */,
 				6C7849191AED4DD50054DBED /* Images.xcassets in Resources */,
 			);
@@ -232,6 +236,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6C7849151AED4DD50054DBED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7849161AED4DD50054DBED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		6C78491A1AED4DD50054DBED /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,7 +409,6 @@
 				6C78492D1AED4DD50054DBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		6C78492E1AED4DD50054DBED /* Build configuration list for PBXNativeTarget "GhostChat-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -406,7 +417,6 @@
 				6C7849301AED4DD50054DBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

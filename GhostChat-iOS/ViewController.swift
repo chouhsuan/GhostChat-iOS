@@ -415,10 +415,10 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
-            return "Chat"
+            return "Chat Activity"
         }else if section == 1{
             tableView.sectionIndexColor = UIColor.darkGrayColor()
-            return "Devices"
+            return "BackGround Devices"
         } else {
             return "Misc"
         }
