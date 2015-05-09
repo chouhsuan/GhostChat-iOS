@@ -39,7 +39,6 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     var peripheralArray = [CBPeripheral]() // create now empty array.
   
     
-    
     // MARK: - UI Stuff
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameField: UITextField!
@@ -55,7 +54,17 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         refreshArrays()
         startScanning()
         
+        var refreshPressed = UIButton()
+//        refreshPressedView = UIButton
+//        refreshPressedView.frame = CGRect(origin: CGPointMake(0.0, 0.0))
+
     }
+    
+//    var subwayMap = UIImage(named: "subway_2100x2505.jpg")!
+//    subwayMapImageView = UIImageView(image: subwayMap)
+//    subwayMapImageView.frame = CGRect(origin: CGPointMake(0.0, 0.0), size:subwayMap.size)
+    
+//  unionSq.frame = CGRect(origin: CGPointMake(scrollOriginX+168, scrollOriginY+340), size: CGSizeMake(40, 30))
     
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
@@ -415,10 +424,10 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
-            return "Chat Activity"
+            return "Activity"
         }else if section == 1{
             tableView.sectionIndexColor = UIColor.darkGrayColor()
-            return "BackGround Devices"
+            return "Devices"
         } else {
             return "Misc"
         }
