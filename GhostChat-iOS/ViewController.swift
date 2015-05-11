@@ -408,13 +408,16 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
             let cell = tableView.dequeueReusableCellWithIdentifier("chatCell", forIndexPath: indexPath) as! UITableViewCell
             cell.textLabel?.text = "\(cleanAndSortedChatArray[indexPath.row].2)"
             cell.detailTextLabel?.text = cleanAndSortedChatArray[indexPath.row].1
-            
+            cell.backgroundColor =  UIColor.blackColor()
+            // 把存自的地方顯示在這裏，就可以看到自己說的話。不要從array拿、從自己的label拿
             return cell
             
         } else {
             
             // Configure the cell...
             let cell = tableView.dequeueReusableCellWithIdentifier("backgroundCell", forIndexPath: indexPath) as! UITableViewCell
+            //顏色放這
+            cell.backgroundColor =  UIColor.blackColor()
             cell.textLabel?.text = "\(cleanAndSortedArray[indexPath.row].1)" + "  \(cleanAndSortedArray[indexPath.row].2)"
             cell.detailTextLabel?.text = cleanAndSortedArray[indexPath.row].3
             
