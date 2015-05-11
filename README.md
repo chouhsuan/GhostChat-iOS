@@ -15,6 +15,6 @@ Screenshot
 ![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/03.png)
 
 Talk with other
-![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/04.png)
-![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/05.png)
-![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/06.png)
+![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/04.jpg)
+![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/05.jpg)
+![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/06.jpg)
