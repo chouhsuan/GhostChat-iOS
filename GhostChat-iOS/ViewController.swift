@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 
-class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
+class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate,UITextFieldDelegate {
 
     // MARK: - Globals
     
@@ -46,7 +46,11 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
 
     @IBAction func sendButtonPressed(sender: UIButton) {
         advertiseNewName(myTextField.text)
-
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        myTextField.resignFirstResponder()
+        return false
     }
     
     @IBAction func refreshPressed(sender: UIButton) {
@@ -57,7 +61,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         var refreshPressed = UIButton()
 //        refreshPressedView = UIButton
 //        refreshPressedView.frame = CGRect(origin: CGPointMake(0.0, 0.0))
-
+        
     }
     
 //    var subwayMap = UIImage(named: "subway_2100x2505.jpg")!
@@ -71,7 +75,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         super.viewDidLoad()
         advertiseNewName(myTextField.text)
         putPeripheralManagerIntoMainQueue()
-        
+    
 
     }
 
@@ -114,7 +118,6 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         tableView.reloadData()
         
     }
-    
     
     
     // MARK:  - CBPeripheral
