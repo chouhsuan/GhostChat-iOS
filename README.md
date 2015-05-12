@@ -1,4 +1,5 @@
 ## GhostChat-iOS
+![alt text](https://github.com/chouhsuan/GhostChat-iOS/blob/master/screenShot/icon%20in%20phone.png)
 
 ## Look and Feel
 
