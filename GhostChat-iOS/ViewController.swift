@@ -53,6 +53,8 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         return false
     }
     
+    
+    
     @IBAction func refreshPressed(sender: UIButton) {
         myCentralManager.stopScan()
         refreshArrays()
